@@ -5,5 +5,5 @@ if __name__ == '__main__':
     # Instantiate the data problem.
     data = dm.create_data_model()
 
-    # Find and print best route
+    # Find and print best route using constraint programming
     cp.find_best_routes(data)
