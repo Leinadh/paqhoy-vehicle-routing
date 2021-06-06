@@ -2,5 +2,12 @@
   "LONGITUD_EJE_X": 70,
   "LONGITUD_EJE_Y": 50,
   "POSICION_ALMACEN": [45, 30],
-  "C": 1
+  "C": 1,
+
+
+  "TIPOS_VEHICULOS": ["AUTO", "MOTO"],
+  "CANTIDAD_VEHICULOS": {
+    "AUTO": 20,
+    "MOTO": 40
+  }
 }
