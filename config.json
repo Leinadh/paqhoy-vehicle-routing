@@ -4,10 +4,17 @@
   "POSICION_ALMACEN": [45, 30],
   "C": 1,
 
-
   "TIPOS_VEHICULOS": ["AUTO", "MOTO"],
   "CANTIDAD_VEHICULOS": {
     "AUTO": 20,
     "MOTO": 40
+  },
+  "CAPACIDAD_VEHICULOS": {
+    "AUTO": 25,
+    "MOTO": 4
+  },
+  "VELOCIDAD_VEHICULOS": {
+    "AUTO": 30,
+    "MOTO": 60
   }
 }
