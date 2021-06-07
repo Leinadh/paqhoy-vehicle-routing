@@ -17,7 +17,7 @@ def formatear_arch_pedido(input_file, input_file_name, output_path):
 
 
 if __name__ == '__main__':
-    input_path = '../Test Data/data.historica.20210511/'
+    input_path = '../Test Data/Test Data Sin Formato/data.historica.20210511/'
     output_path = '../Test Data/2021.pedidos/'
 
     for file_name in os.listdir(input_path):
