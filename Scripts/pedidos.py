@@ -66,7 +66,7 @@ def crear_arch_pedido(output_path, anho, mes, dia, fecha_ini_global, param_m, pa
     dia_str = '0' + str(dia) if dia < 10 else str(dia)
     mes_str = '0' + str(mes) if mes < 10 else str(mes)
     anho_str = str(anho)
-    file_name = f'pedido{anho_str}{mes_str}{dia_str}'
+    file_name = f'pedido{anho_str}{mes_str}{dia_str}.txt'
     with open(os.path.join(output_path, file_name), 'w') as file:
         for registro in ls_registros_dia:
             file.write(registro)
