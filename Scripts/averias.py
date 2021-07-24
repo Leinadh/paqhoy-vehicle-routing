@@ -16,8 +16,8 @@ def crear_arch_averias(output_path, anho, mes, cant_motos, cant_autos):
         dd = '0' + str(rd) if rd < 10 else str(rd)
 
         # id aleatorio
-        cant_vehiculo = cant_motos if vehiculo == 'moto' else cant_autos
-        ri = random.randrange(cant_vehiculo)
+        cant_vehiculo, ini_id = (cant_motos, 1) if vehiculo == 'moto' else (cant_autos + cant_motos, cant_motos + 1)
+        ri = random.randrange(ini_id, cant_vehiculo + 1)
         id_vehiculo = '0' + str(ri) if ri < 10 else str(ri)
 
         # hora aleatoria
@@ -33,7 +33,7 @@ def crear_arch_averias(output_path, anho, mes, cant_motos, cant_autos):
         averias_mes.append(registro_averia)
 
     # ordenar por dia y hora
-    averias_mes.sort(key=lambda x: (x[:2],x[11:13],x[14:]))
+    averias_mes.sort(key=lambda x: (x[:2], x[11:13], x[14:]))
     # print(averias_mes)
 
     mes_str = '0' + str(mes) if mes < 10 else str(mes)
@@ -54,5 +54,5 @@ if __name__ == '__main__':
     anho = 2021
 
     # se crean 50 registros por mes
-    for mes in range(1,13):
+    for mes in range(1, 13):
         crear_arch_averias(output_path, anho, mes, cant_motos, cant_autos)
