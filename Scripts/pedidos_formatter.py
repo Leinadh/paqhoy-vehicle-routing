@@ -17,15 +17,22 @@ def formatear_arch_pedido(input_file, input_file_name, output_path):
 
 
 if __name__ == '__main__':
-    input_path = '../Test Data/Test Data Sin Formato/data.historica.20210511/'
-    output_path = '../Test Data/pred.2021.pedidos/'
+    # input_path = '../Test Data/Test Data Sin Formato/data.historica.20210511/'
+    # output_path = '../Test Data/pred.2021.pedidos/'
+    #
+    # pred_input_path = '../Test Data/Test Data Sin Formato/pred.2021.pedidos/'
+    #
+    # for file_name in os.listdir(input_path):
+    #     print(file_name)
+    #     formatear_arch_pedido(os.path.join(input_path, file_name), file_name, output_path)
+    #
+    # for file_name in os.listdir(pred_input_path):
+    #     print(file_name)
+    #     formatear_arch_pedido(os.path.join(pred_input_path, file_name), file_name, output_path)
 
-    pred_input_path = '../Test Data/Test Data Sin Formato/pred.2021.pedidos/'
+    input_path = '../Test Data/Test Data Sin Formato/data.historica.20210710/'
+    output_path = '../Test Data/formateado.data.20210710/formateado.data.historica.20210710'
 
     for file_name in os.listdir(input_path):
         print(file_name)
         formatear_arch_pedido(os.path.join(input_path, file_name), file_name, output_path)
-
-    for file_name in os.listdir(pred_input_path):
-        print(file_name)
-        formatear_arch_pedido(os.path.join(pred_input_path, file_name), file_name, output_path)
